@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web制作のポートフォリオサイト。制作実績、スキル、プロフィールを公開しています。">
+  <title>Taka | Web Designer & Coder Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="top"></div>
+
+<header class="header">
+  <div class="header-container w-container">
+    <div class="site">
+      <a href="index.html">
+      </a>
+    </div>
+
+    <!-- ナビゲーションボタン -->
+    <button class="navbtn"
+            aria-expanded="false"
+            aria-controls="nav"
+            aria-label="メニューを開閉"
+            onclick="
+              const html = document.documentElement;
+              const expanded = html.classList.toggle('open');
+              this.setAttribute('aria-expanded', expanded);
+            ">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+      <span class="sr-only">MENU</span>
+    </button>
+
+    <!-- ナビゲーション -->
+    <nav id="nav" class="nav">
+      <ul>
+<li><a href="#about">ABOUT</a></li>
+<li><a href="#learning">LEARNING</a></li>
+<li><a href="#works">WORKS</a></li>
+<li><a href="#skills">SKILLS</a></li>
+<li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="hero-container w-container">
+<h1 class="hero-title">
+  WebDesign Coding<br>
+  My Portfolio
+</h1>
+<p class="hero-sub">
+  遠野職業訓練校 Webデザイン科 修了
+</p>
+  </div>
+</section>
+
+<!-- ====== ABOUT ====== -->
+<section id="about" class="about w-container">
+  <h2 class="heading-decoration">ABOUT</h2>
+
+  <div class="about-inner">
+    <img src="img/PROFILE.png" alt="Takaのプロフィール写真" class="profile-img" loading="lazy">
+
+    <div class="about-text">
+      <h3>Taka</h3>
+<p>
+  職業訓練校では<br>  
+  ・HTML / CSSによるコーディング<br>  
+  ・レスポンシブ対応<br>  
+  ・Web制作の基本的な流れ<br>  
+  を学びました。<br>
+</p>
+
+<p>
+  未経験ではありますが指示されたデザインを<br> 
+  正確に再現すること可読性を意識した<br>
+  コーディングを心がけています。<br>  
+  
+</p>
+<p>
+  コーディングでは<br>  
+  ・セマンティックなHTML構造<br>  
+  ・CSSによるレスポンシブ対応<br>  
+  ・保守しやすいクラス設計<br>  
+  を意識しています。
+</p>
+    </div>
+  </div>
+</section>
+
+<!-- ====== LEARNING ====== -->
+ <hr class="section-line">
+<section id="learning" class="learning w-container">
+  <h2 class="heading-decoration">LEARNING</h2>
+  <p class="learning-text">
+    未経験からのスタートのため基礎を大切に<br>
+    しながら継続して学習しています。<br>
+    分からない点は調べて解決し理解した内容を<br>
+    まとめることを意識しています。<br>
+  </p>
+</section>
+
+
+<!-- ====== WORKS ====== -->
+ <hr class="section-line">
+<section id="works" class="works w-container">
+  <h2 class="heading-decoration">WORKS</h2>
+
+  <div class="works-container">
+
+    <!-- 作品1 -->
+    <article class="work-item">
+      <img src="img/WORKS01.jpg" alt="子ども向けファーストビューのデザイン例" class="work-thumb" loading="lazy">
+      <h3>ファーストビュー制作</h3>
+
+      <p>目的：子どもでも直感的に<br>
+        理解できるファーストビュー</p>
+      <p>ターゲット：小学生や小さいお子さん連れの親子</p>
+      <p>こだわり：漢字をできるだけ使わず<br>
+        子どもにも見やすいレイアウト</p>
+      <p>使用ツール：Photoshop / Illustrator</p>
+      <p>制作期間：1週間</p>
+    </article>
+
+    <!-- 作品2（リンク修正済み） -->
+    <article class="work-item">
+      <h3>Webサイト制作</h3>
+      <p>
+<a href="https://takahirotanuma.github.io/taka/"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="works-link">
+  サイトを見る
+</a>
+      </p>
+      <p>
+  職業訓練校で学んだ内容をもとにデザインから<br>  
+  コーディングまで一人で制作しました。<br>
+</p>
+<p>
+  基本的なHTML構造とCSS設計を意識し<br>
+  スマートフォン表示にも対応しています。<br>
+</p>
+
+      <p>ターゲット：盛岡に観光しに来る人向け</p>
+      <p>こだわり：文字に頼らずに自分で<br>
+        撮った写真で伝えた</p>
+      <p>使用ツール：HTML/CSS</p>
+      <p>制作期間：1週間</p>
+    </article>
+
+  </div>
+</section>
+<!-- ====== SKILLS ====== -->
+ <hr class="section-line">
+<section id="skills" class="skills w-container">
+  <h2 class="heading-decoration">SKILLS</h2>
+  <ul class="skills-list">
+<li>HTML / CSS（基礎構造・レスポンシブ対応）</li>
+<li>Visual Studio Code（コーディング）</li>
+<li>Photoshop / Illustrator（簡単なデザイン制作）</li>
+  </ul>
+</section>
+<!-- ====== CONTACT ====== -->
+ <hr class="section-line">
+<section id="contact" class="contact w-container">
+  <h2 class="heading-decoration">CONTACT</h2>
+  <p>
+  下記メールアドレスよりお願いいたします。
+</p>
+
+  <p class="mail">MAIL: <a href="mailto:suomusblack@yahoo.co.jp">suomusblack@yahoo.co.jp</a></p>
+</section>
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="footer-container w-container">
+
+    <div class="footer-site">
+      <a href="index.html">
+      </a>
+    </div>
+
+    <ul class="footer-sns">
+      <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+
+    <div class="footer-copy">
+      © 2025 Taka Portfolio.
+    </div>
+
+  </div>
+<a id="pagetop" href="#top" aria-label="ページ上部へ戻る">
+  <span id="pagetop_inner"></span>
+</a>
+</footer>
+
+<script>
+  const pagetop = document.getElementById('pagetop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      pagetop.style.opacity = '1';
+      pagetop.style.pointerEvents = 'auto';
+    } else {
+      pagetop.style.opacity = '0';
+      pagetop.style.pointerEvents = 'none';
+    }
+  });
+</script>
+
+
+</body>
+</html>
